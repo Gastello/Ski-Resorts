@@ -1,0 +1,459 @@
+@import "null_style.scss";
+
+@import "fonts.scss";
+$fontFamily: "M PLUS 1p", sans-serif;
+*::selection {
+   background: rgba(60, 60, 60, 0.4);
+   color: white;
+}
+$paddingContainer: 20;
+$maxWidthContainer: 1200 + $paddingContainer * 2;
+
+$md1: $maxWidthContainer + $paddingContainer;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+body {
+   font-family: $fontFamily;
+   color: white;
+   font-size: 16px;
+   ::-webkit-scrollbar {
+      width: 9px;
+      background-color: rgba(41, 41, 41, 0.491);
+   }
+   ::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.589);
+   }
+}
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.container {
+   max-width: $maxWidthContainer + px;
+   margin: 0 auto;
+   padding: 0 $paddingContainer + px;
+}
+.page {
+   padding: 70px 0;
+   flex: 1 1 100%;
+   background: url("../images/background.jpg");
+   background-size: cover;
+   background-position: bottom;
+   background-attachment: fixed;
+}
+@import "header.scss";
+.footer {
+   background: url("../images/footer.jpg");
+   background-position: center;
+   background-size: cover;
+
+   &__body {
+      padding: 42px 0;
+   }
+
+   &__text {
+      text-align: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      color: white;
+   }
+}
+
+.title {
+   padding: 20px;
+   font-size: 24px;
+   line-height: 1.3;
+   text-align: center;
+   font-weight: bold;
+   background: url("../images/element.jpg");
+   background-size: cover;
+}
+.pathes__title {
+   margin-bottom: 50px;
+}
+.pathes__element_wrapper {
+   margin-bottom: 50px;
+   background: url("../images/element.jpg");
+   background-size: cover;
+}
+.pathes {
+   padding: 0 40px;
+   // .pathes__element
+
+   &__element {
+      position: relative;
+      width: 100%;
+   }
+}
+.path__textarea {
+   overflow: auto;
+   height: 340px;
+   padding-right: 25px;
+}
+
+.path {
+   overflow: hidden;
+   display: flex;
+   height: 482px;
+
+   // .path__img
+
+   &__img {
+      flex: 0 0 45%;
+      min-height: 100%;
+   }
+   &__img_details {
+      padding: 10px;
+      img {
+         max-width: 100%;
+      }
+   }
+   .img-1 {
+      background: url("../images/tour-1.png");
+      background-position: right;
+      background-size: cover;
+   }
+   .img-2 {
+      background: url("../images/tour-2.png");
+      background-position: right;
+
+      background-size: cover;
+   }
+   .img-3 {
+      background: url("../images/tour-3.png");
+      background-position: right;
+
+      background-size: cover;
+   }
+   .img-4 {
+      background: url("../images/tour-4.png");
+      background-position: right;
+
+      background-size: cover;
+   }
+   .img-5 {
+      background: url("../images/tour-5.png");
+      background-position: right;
+
+      background-size: cover;
+   }
+   .img-6 {
+      background: url("../images/tour-6.png");
+      background-position: right;
+      background-size: cover;
+   }
+   .img-7 {
+      background: url("../images/tour-7.png");
+      background-position: right;
+   }
+   .img-8 {
+      background: url("../images/tour-8.png");
+      background-position: right;
+   }
+   // .path__body
+
+   &__body {
+      flex: 1 1 55%;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 18/16 * 1;
+      color: #ffffff;
+      padding: 30px 25px 25px 30px;
+   }
+
+   // .path__header
+
+   &__header {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 30px;
+      line-height: 1.2;
+   }
+
+   // .path__text
+
+   &__text {
+      line-height: 1.3;
+      a {
+         color: rgba(255, 255, 255, 0.747);
+         font-style: italic;
+         &:hover {
+            color: white;
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+   }
+
+   // .path__label
+
+   &__label {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 18/16 * 1;
+      color: #ffffff;
+   }
+}
+.tablet-image {
+   display: none;
+}
+.path__details {
+   opacity: 0;
+   height: 0px;
+}
+.path__details_inner {
+   div:not(:last-child) {
+      margin-bottom: 15px;
+   }
+}
+.path__details.active {
+   transition: opacity 2s ease-out;
+   padding: 30px 25px;
+   overflow: auto;
+   opacity: 1;
+   height: 482px;
+}
+.fx {
+   display: flex;
+}
+.fx_dc {
+   display: flex;
+   div {
+      flex: 0 0 50%;
+   }
+}
+.tac {
+   text-align: center;
+}
+.aic {
+   display: flex;
+   align-items: center;
+}
+.path__list {
+   li {
+      padding-left: 30px;
+      position: relative;
+      align-items: center;
+      &::before {
+         content: "";
+         position: absolute;
+         left: 15px;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 5px;
+         height: 5px;
+         background-color: #ffffff;
+         border-radius: 50%;
+      }
+      &:not(:last-child) {
+         margin-bottom: 5px;
+      }
+   }
+}
+@media (max-width: $md3) {
+   .pathes {
+      padding: 0px;
+   }
+   .path {
+      flex-direction: column;
+      height: auto;
+   }
+   .path__textarea {
+      padding: 0px;
+      height: auto;
+      overflow: hidden;
+   }
+   .path__img {
+      min-height: 350px;
+      width: 100%;
+   }
+   .path {
+      .img-1 {
+         background: url("../images/tour-1_t.png");
+         background-size: cover;
+         background-position: bottom;
+      }
+      .img-2 {
+         background: url("../images/tour-2_t.png");
+         background-size: cover;
+         background-position: bottom;
+      }
+      .img-3 {
+         background: url("../images/tour-3_t.png");
+         background-size: cover;
+         background-position: bottom;
+      }
+      .img-4 {
+         background: url("../images/tour-4_t.png");
+         background-size: cover;
+         background-position: bottom;
+      }
+      .img-5 {
+         background: url("../images/tour-5_t.png");
+         background-size: cover;
+         background-position: bottom;
+      }
+      .img-6 {
+         background: url("../images/tour-6_t.png");
+         background-size: cover;
+         background-position: bottom;
+      }
+      .img-7 {
+         background: url("../images/tour-7_t.png");
+         background-size: cover;
+         background-position: bottom;
+      }
+      .img-8 {
+         background: url("../images/tour-8_t.png");
+         background-size: cover;
+         background-position: bottom;
+      }
+   }
+   .fx_dc {
+      flex-direction: column;
+   }
+   .path__body {
+      flex: 1 1 55%;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 18/16 * 1;
+      color: #ffffff;
+      padding: 30px 10px 25px 10px;
+   }
+   .path__img_details {
+      padding: 0px;
+   }
+}
+.album__video {
+   margin-bottom: 40px;
+}
+
+.album {
+   // .album__row
+
+   &__row {
+      display: flex;
+      margin-bottom: 40px;
+   }
+
+   // .album__element
+
+   &__element {
+      flex: 0 0 33.333%;
+      img {
+         height: 100%;
+         max-width: 100%;
+         object-fit: fill;
+      }
+   }
+}
+
+.album {
+   // .album__square
+
+   &__square {
+   }
+}
+.square {
+   // .square__row
+
+   &__row {
+      display: flex;
+   }
+
+   // .square__element
+
+   &__element {
+      flex: 0 0 50%;
+      overflow: hidden;
+      height: 300px;
+      img {
+         max-width: 100%;
+         object-fit: cover;
+      }
+   }
+}
+
+@media (max-width: $md3) {
+   .album {
+      // .album__row
+
+      &__row {
+         flex-direction: column;
+      }
+
+      // .album__element
+
+      &__element {
+         flex: 0 0 100%;
+         img {
+            max-width: 100%;
+            object-fit: fill;
+         }
+      }
+   }
+
+   .square {
+      // .square__row
+
+      &__row {
+         flex-direction: column;
+      }
+
+      // .square__element
+
+      &__element {
+         flex: 0 0 100%;
+      }
+   }
+}
+.contacts {
+   // .contacts__row
+
+   &__row {
+      display: flex;
+   }
+
+   // .contacts__element
+
+   &__element {
+      flex: 0 0 50%;
+      padding: 5px;
+      overflow: hidden;
+      img {
+         max-width: 100%;
+         object-fit: cover;
+         &:hover {
+            transition: all 0.5s ease-out;
+            transform: scale(2);
+         }
+      }
+   }
+}
+@media (max-width: $md3) {
+   .contacts {
+      // .contacts__row
+
+      &__row {
+         display: flex;
+         flex-direction: column;
+      }
+
+      // .contacts__element
+
+      &__element {
+         flex: 0 0 100%;
+      }
+   }
+}
