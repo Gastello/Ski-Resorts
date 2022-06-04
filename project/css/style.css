@@ -114,6 +114,7 @@ body {
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   background: url("../images/background.jpg");
+  background-size: 100%;
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed; }
