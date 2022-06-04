@@ -115,8 +115,15 @@ body {
   flex: 1 1 100%;
   background: url("../images/background.jpg");
   background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed; }
+  background-position: bottom; }
+
+@supports (-webkit-touch-callout: none) {
+  .page {
+    background-attachment: scroll; } }
+
+@supports not (-webkit-touch-callout: none) {
+  .page {
+    background-attachment: fixed; } }
 
 .header {
   position: relative;

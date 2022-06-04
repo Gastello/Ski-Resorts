@@ -43,8 +43,20 @@ body {
    background: url("../images/background.jpg");
    background-size: cover;
    background-position: bottom;
-   background-attachment: fixed;
+   //background-attachment: fixed;
 }
+@supports (-webkit-touch-callout: none) {
+   .page {
+      background-attachment: scroll;
+   }
+}
+
+@supports not (-webkit-touch-callout: none) {
+   .page {
+      background-attachment: fixed;
+   }
+}
+
 @import "header.scss";
 .footer {
    background: url("../images/footer.jpg");
