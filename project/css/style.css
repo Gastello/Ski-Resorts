@@ -253,6 +253,7 @@ body {
   margin-bottom: 50px; }
 
 .pathes__element_wrapper {
+  cursor: pointer;
   margin-bottom: 50px;
   background: url("../images/element.jpg");
   background-size: cover; }
@@ -351,7 +352,9 @@ body {
 
 .path__details {
   opacity: 0;
-  height: 0px; }
+  visibility: hidden;
+  height: 0px;
+  cursor: default; }
 
 .path__details_inner div:not(:last-child) {
   margin-bottom: 15px; }
@@ -363,6 +366,7 @@ body {
   padding: 30px 25px;
   overflow: auto;
   opacity: 1;
+  visibility: visible;
   height: 482px; }
 
 .fx {
