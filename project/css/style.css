@@ -113,7 +113,7 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  background: url("../images/background.jpg");
+  background: url("../images/background.webp");
   background-size: 100%;
   background-size: cover;
   background-position: bottom;
@@ -121,7 +121,7 @@ body {
 
 @supports (-webkit-touch-callout: none) {
   .page {
-    background: url("image.jpg") center bottom no-repeat scroll;
+    background: url("image.webp") center bottom no-repeat scroll;
     background-size: auto 100vh; } }
 
 .header {
@@ -130,7 +130,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: url("../images/menu-1.jpg");
+  background: url("../images/menu-1.webp");
   background-position: center;
   background-size: cover; }
   .header__body {
@@ -202,7 +202,7 @@ body {
       background: white; }
   .header__menu {
     position: fixed;
-    background: url("../images/background.jpg");
+    background: url("../images/background.webp");
     background-position: bottom;
     width: 100vw;
     height: 100vh;
@@ -227,7 +227,7 @@ body {
       text-align: center; } }
 
 .footer {
-  background: url("../images/footer.jpg");
+  background: url("../images/footer.webp");
   background-position: center;
   background-size: cover; }
   .footer__body {
@@ -246,7 +246,7 @@ body {
   line-height: 1.3;
   text-align: center;
   font-weight: bold;
-  background: url("../images/element.jpg");
+  background: url("../images/element.webp");
   background-size: cover; }
 
 .pathes__title {
@@ -255,7 +255,7 @@ body {
 .pathes__element_wrapper {
   cursor: pointer;
   margin-bottom: 50px;
-  background: url("../images/element.jpg");
+  background: url("../images/element.webp");
   background-size: cover; }
 
 .pathes {
@@ -285,34 +285,34 @@ body {
     .path__img_details img {
       max-width: 100%; }
   .path .img-1 {
-    background: url("../images/tour-1.png");
+    background: url("../images/tour-1.webp");
     background-position: right;
     background-size: cover; }
   .path .img-2 {
-    background: url("../images/tour-2.png");
+    background: url("../images/tour-2.webp");
     background-position: right;
     background-size: cover; }
   .path .img-3 {
-    background: url("../images/tour-3.png");
+    background: url("../images/tour-3.webp");
     background-position: right;
     background-size: cover; }
   .path .img-4 {
-    background: url("../images/tour-4.png");
+    background: url("../images/tour-4.webp");
     background-position: right;
     background-size: cover; }
   .path .img-5 {
-    background: url("../images/tour-5.png");
+    background: url("../images/tour-5.webp");
     background-position: right;
     background-size: cover; }
   .path .img-6 {
-    background: url("../images/tour-6.png");
+    background: url("../images/tour-6.webp");
     background-position: right;
     background-size: cover; }
   .path .img-7 {
-    background: url("../images/tour-7.png");
+    background: url("../images/tour-7.webp");
     background-position: right; }
   .path .img-8 {
-    background: url("../images/tour-8.png");
+    background: url("../images/tour-8.webp");
     background-position: right; }
   .path__body {
     -webkit-box-flex: 1;
@@ -432,35 +432,35 @@ body {
     min-height: 350px;
     width: 100%; }
   .path .img-1 {
-    background: url("../images/tour-1_t.png");
+    background: url("../images/tour-1-t.webp");
     background-size: cover;
     background-position: bottom; }
   .path .img-2 {
-    background: url("../images/tour-2_t.png");
+    background: url("../images/tour-2-t.webp");
     background-size: cover;
     background-position: bottom; }
   .path .img-3 {
-    background: url("../images/tour-3_t.png");
+    background: url("../images/tour-3-t.webp");
     background-size: cover;
     background-position: bottom; }
   .path .img-4 {
-    background: url("../images/tour-4_t.png");
+    background: url("../images/tour-4-t.webp");
     background-size: cover;
     background-position: bottom; }
   .path .img-5 {
-    background: url("../images/tour-5_t.png");
+    background: url("../images/tour-5-t.webp");
     background-size: cover;
     background-position: bottom; }
   .path .img-6 {
-    background: url("../images/tour-6_t.png");
+    background: url("../images/tour-6-t.webp");
     background-size: cover;
     background-position: bottom; }
   .path .img-7 {
-    background: url("../images/tour-7_t.png");
+    background: url("../images/tour-7-t.webp");
     background-size: cover;
     background-position: bottom; }
   .path .img-8 {
-    background: url("../images/tour-8_t.png");
+    background: url("../images/tour-8-t.webp");
     background-size: cover;
     background-position: bottom; }
   .fx_dc {
